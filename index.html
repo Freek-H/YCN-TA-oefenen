@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="todo-wrapper">
+        <h2>Mijn todo lijst</h2>
+        <p>Dubbel klik op een todo om het gedaan te markeren</p>
+        <form id="todo-adder" onsubmit="return false" autocomplete="off">  
+            <input type="text" id="todo-entry-box">
+            <button id="add-button" class="pretty-button">Toevoegen</button>
+        </form>
+        <br>
+        <ol id="todo-list">
+        </ol>
+        <div id="control-wrapper">
+            <button id="clear-completed-button" class="pretty-button">Clear</button>
+            <button id="empty-button" class="pretty-button">Leegmaken</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
